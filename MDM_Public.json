@@ -1,0 +1,510 @@
+{
+	"info": {
+		"_postman_id": "0584e303-ffa9-4a9b-8383-b9b3239141a5",
+		"name": "MDM Public",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ST Cloud Front",
+			"item": [
+				{
+					"name": "States",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Name",
+								"value": "Vivienda",
+								"type": "text"
+							}
+						],
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/states"
+					},
+					"response": []
+				},
+				{
+					"name": "States by id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Name",
+								"value": "Vivienda",
+								"type": "text"
+							}
+						],
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/states/11"
+					},
+					"response": []
+				},
+				{
+					"name": "Offices by States id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Name",
+								"value": "Vivienda",
+								"type": "text"
+							}
+						],
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/states/11/offices"
+					},
+					"response": []
+				},
+				{
+					"name": "cities by States id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Name",
+								"value": "Vivienda",
+								"type": "text"
+							}
+						],
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/states/11/cities"
+					},
+					"response": []
+				},
+				{
+					"name": "cities",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Name",
+								"value": "Vivienda",
+								"type": "text"
+							}
+						],
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/cities"
+					},
+					"response": []
+				},
+				{
+					"name": "cities by id ",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Name",
+								"value": "Vivienda",
+								"type": "text"
+							}
+						],
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/cities/11001"
+					},
+					"response": []
+				},
+				{
+					"name": "conurbation by cities id ",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Name",
+								"value": "Vivienda",
+								"type": "text"
+							}
+						],
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/cities/11001/conurbation"
+					},
+					"response": []
+				},
+				{
+					"name": "offices by cities id ",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Name",
+								"value": "Vivienda",
+								"type": "text"
+							}
+						],
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/cities/11001/offices"
+					},
+					"response": []
+				},
+				{
+					"name": "countries",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Name",
+								"value": "Vivienda",
+								"type": "text"
+							}
+						],
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/countries"
+					},
+					"response": []
+				},
+				{
+					"name": "office by id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Name",
+								"value": "Vivienda",
+								"type": "text"
+							}
+						],
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/offices/0371"
+					},
+					"response": []
+				},
+				{
+					"name": "region by office id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Name",
+								"value": "Vivienda",
+								"type": "text"
+							}
+						],
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/offices/0371/region"
+					},
+					"response": []
+				},
+				{
+					"name": "specializedCenter by office id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Name",
+								"value": "Vivienda",
+								"type": "text"
+							}
+						],
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/offices/0371/specializedCenter"
+					},
+					"response": []
+				},
+				{
+					"name": "tutorOffices by premiumOffices ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Name",
+								"type": "text",
+								"value": "Vivienda"
+							}
+						],
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/premiumOffices/0195/tutorOffices"
+					},
+					"response": []
+				},
+				{
+					"name": "machine by IP Addrees",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Name",
+								"value": "Vivienda",
+								"type": "text"
+							}
+						],
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/machine/ip/192.168.5.477"
+					},
+					"response": []
+				},
+				{
+					"name": "machine by office id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Name",
+								"value": "Vivienda",
+								"type": "text"
+							}
+						],
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/machine/office/0018"
+					},
+					"response": []
+				},
+				{
+					"name": "AllOffices",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Name",
+								"type": "text",
+								"value": "Vivienda"
+							}
+						],
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/AllOffices"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
