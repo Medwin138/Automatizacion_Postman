@@ -314,7 +314,7 @@
 								"type": "text"
 							}
 						],
-						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/offices/0371"
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/offices/0005"
 					},
 					"response": []
 				},
@@ -345,7 +345,7 @@
 								"type": "text"
 							}
 						],
-						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/offices/0371/region"
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/offices/0005/region"
 					},
 					"response": []
 				},
@@ -376,7 +376,7 @@
 								"type": "text"
 							}
 						],
-						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/offices/0371/specializedCenter"
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/offices/0005/specializedCenter"
 					},
 					"response": []
 				},
@@ -469,7 +469,7 @@
 								"type": "text"
 							}
 						],
-						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/machine/office/0018"
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/machine/office/0000"
 					},
 					"response": []
 				},
@@ -500,7 +500,7 @@
 								"type": "text"
 							}
 						],
-						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/machine/office/0018"
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/offices"
 					},
 					"response": []
 				},
@@ -531,7 +531,7 @@
 								"value": "Vivienda"
 							}
 						],
-						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/AllOffices"
+						"url": "https://api-sbx.labdigitalbdbtvsstg.com/master-data-management-public/V1/Utilities/mdm/states/11/offices"
 					},
 					"response": []
 				}
