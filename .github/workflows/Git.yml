@@ -1,0 +1,39 @@
+name: APIS_POSTMAN_EJ
+on:
+  push:
+    branches:
+      - main
+jobs:
+  test-api:
+    runs-on: ubuntu-latest
+    steps:
+    # Registra tu repositorio en $ GITHUB_WORKSPACE, para que tu trabajo pueda acceder a él.
+    - uses: actions/checkout@v2
+      
+    # Instalar nodo en el runner
+    - name: Install Node
+      uses: actions/setup-node@v1
+      with: 
+        node-version: '12.x'
+    
+    # Instale la utilidad de línea de comandos newman y también instale html extra reporter
+    - name: Install newman
+      run: |
+       npm install -g newman
+       npm install -g newman-reporter-htmlextra
+    # Crear directorio para cargar los resultados de la prueba
+    - name: Make Directory for results
+      run: mkdir -p testResults
+
+
+    # Ejecute la colección POSTMAN
+    - name: Run POSTMAN collection
+      run: |
+       newman run Postman/MDM_Public.json --reporters=cli,htmlextra --reporter-htmlextra-export testResults/htmlreport.html --reporter-htmlextra-darkTheme
+ 
+    # Cargue el contenido del directorio de resultados de la prueba en el espacio de trabajo y generacion de reporte 13 de mayo
+    - name: Output the run Details
+      uses: actions/upload-artifact@v2
+      with: 
+       name: RunReports
+       path: testResults
