@@ -20,7 +20,13 @@
 									"});",
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
-									"});"
+									"});",
+									"",
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"BOGOTÁ D.C.- CUND\");",
+									"});",
+									"",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -51,6 +57,10 @@
 									"});",
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});",
+									"",
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"BOGOTÁ D.C.- CUND\");",
 									"});"
 								],
 								"type": "text/javascript"
@@ -82,6 +92,10 @@
 									"});",
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});",
+									"",
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"BOGOTÁ D.C.- CUND\");",
 									"});"
 								],
 								"type": "text/javascript"
@@ -113,6 +127,10 @@
 									"});",
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});",
+									"",
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"BOGOTA, D.C. - BOGOTA D.C.- CUND.\");",
 									"});"
 								],
 								"type": "text/javascript"
@@ -144,6 +162,9 @@
 									"});",
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});",
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"BOGOTÁ, D.C. - BOGOTÁ D.C.- CUND.\");",
 									"});"
 								],
 								"type": "text/javascript"
@@ -175,6 +196,9 @@
 									"});",
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});",
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"11001\");",
 									"});"
 								],
 								"type": "text/javascript"
@@ -206,6 +230,12 @@
 									"});",
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});",
+									"pm.test(\"ID\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"7\");",
+									"});",
+									"pm.test(\"La ciudad Bogota\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"BOGOTÁ, D.C.\");",
 									"});"
 								],
 								"type": "text/javascript"
@@ -237,6 +267,9 @@
 									"});",
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});",
+									"pm.test(\"Codigo de Ciudad\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"11001\");",
 									"});"
 								],
 								"type": "text/javascript"
@@ -268,6 +301,9 @@
 									"});",
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});",
+									"pm.test(\"Paisses\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"COLOMBIA\");",
 									"});"
 								],
 								"type": "text/javascript"
@@ -299,6 +335,9 @@
 									"});",
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});",
+									"pm.test(\"Oficina de Bogota\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"BOGOTÁ, D.C.\");",
 									"});"
 								],
 								"type": "text/javascript"
@@ -330,6 +369,9 @@
 									"});",
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});",
+									"pm.test(\"Region\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"REGIÓN BOGOTÁ NORTE\");",
 									"});"
 								],
 								"type": "text/javascript"
@@ -361,7 +403,11 @@
 									"});",
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
-									"});"
+									"});",
+									"pm.test(\"desc\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"CEV Bogota Norte\");",
+									"});",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -392,6 +438,9 @@
 									"});",
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});",
+									"pm.test(\"Codigo de Domicilio\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"1056\");",
 									"});"
 								],
 								"type": "text/javascript"
@@ -423,6 +472,9 @@
 									"});",
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});",
+									"pm.test(\"Usuario\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"USRTAB0021@bo.bancodebogota.net\");",
 									"});"
 								],
 								"type": "text/javascript"
@@ -454,6 +506,9 @@
 									"});",
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
+									"});",
+									"pm.test(\"Codigo Oficina\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"0000\");",
 									"});"
 								],
 								"type": "text/javascript"
@@ -485,7 +540,11 @@
 									"});",
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(20000);",
-									"});"
+									"});",
+									"pm.test(\"ID Oficina Principal\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"0000\");",
+									"});",
+									""
 								],
 								"type": "text/javascript"
 							}
