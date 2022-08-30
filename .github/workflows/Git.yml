@@ -31,7 +31,7 @@ jobs:
       run: |
        newman run Postman/MDM_Public.json --reporters=cli,htmlextra --reporter-htmlextra-export testResults/htmlreport.html --reporter-htmlextra-darkTheme
  
-    # Cargue el contenido del directorio de resultados de la prueba en el espacio de trabajo y generacion de reporte 13 de mayo
+    # Cargue el contenido del directorio de resultados de la prueba en el espacio de trabajo y generacion de reporte 29 agosto
     - name: Output the run Details
       uses: actions/upload-artifact@v2
       with: 
