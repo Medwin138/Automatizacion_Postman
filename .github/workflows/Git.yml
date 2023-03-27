@@ -16,7 +16,7 @@ jobs:
       with: 
         node-version: '12.x'
     
-    # Instale la utilidad de línea de comandos newman y también instale html extra reporter
+    # Instale la utilidad de línea de comandos newman y también instale html extra reporterrr
     - name: Install newman
       run: |
        npm install -g newman
